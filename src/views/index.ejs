@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/document.ejs') %>
+
+
+<body>
+    <%- include('./partials/navbar.ejs') %>
+    <div class="portada"> 
+        <img src="/img/logo.png" alt="" height="300px">        
+    </div>
+
+    <div class="descrip d-center">
+        <h5><b class="se">Invitaciones interactivas</b></h5>
+        <h6 class="ub">Vive la experiencia de invitaciones interactivas que resaltan la belleza y la sostenibilidad. <br>
+            Cada diseño cuenta una historia única. <br>
+            Celebra de manera eco-amigable y convierte tu evento en un momento inolvidable.</h6>
+    </div>
+
+    <div class="box-video d-center">
+        <div class="video d-center">
+            <video src="/img/video.mp4" muted controls autoplay height="400"></video>
+        </div>
+    
+        <div class="icons">
+            <ul>
+                <li><img src="/img/menu.png" alt="">Confirmación a WhatsApp</li>
+                <li><img src="/img/menu.png" alt="">Geolocalización del evento</li>
+                <li><img src="/img/menu.png" alt="">#Hashtag para subir los recuerdos</li>
+                <li><img src="/img/menu.png" alt="">Carrusel de fotos</li>
+                <li><img src="/img/menu.png" alt="">Buzón de regalos</li>
+                <li><img src="/img/menu.png" alt="">Frases a elección</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section d-center ub">
+        <h6 class="ub">
+            Selecciona la opción que buscas y elige el diseño que más te guste. <br>
+            ♥ <br>
+            Envíanos un mensajito y de lo demás, nos encargamos nosotros!
+        </h6>
+        <div style="flex-direction: row;">
+            <button class="turq">Bodas</button>
+            <button class="fuccia">Quinces</button>
+            <button class="amar">Bautismo</button>
+        </div>       
+    </div>
+
+    <div class="desktop d-center">
+        <img src="/img/desktop.png" alt="" width="100%">
+        <h6 class="ub">
+            Tus ivitados podrán ingresar a tú invitación en cualquier dispositivo! <br><br>
+            Ahorrá papel, elegí tu invitacion eco-friendly <br>
+            ♥
+        </h6>
+    </div>
+
+    <div class="planner d-center ub">
+        <button>Soy Organizador/a de eventos</button>
+        <button>Soy Dueño de un Salón de Fiestas</button>
+        <h6>
+            Contactate que tenemos promociones super accesibles para que les brindes a tus clientes un servicio de invitaciones que se destaca, un detalle que te van a agradecer.
+        </h6>
+    </div>
+
+    <%- include('./partials/footer.ejs') %>
+
+</body>
+</html>

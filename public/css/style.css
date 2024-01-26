@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.d-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.se{
+    font-family: special elite;
+}
+
+.ub{
+    font-family: ubuntu;
+}
+
+li {
+    list-style-type: none;
+    padding: 0;
+}
+
+.fuccia{
+    background-color: #EF437E;
+}
+
+.turq {
+    background: #5CE1E6;
+}
+
+.amar{
+    background-color: #F5A30D;
+}
+
+/*PORTADA*/
+.portada {
+    height:500px;
+    background-image: url(/img/celular.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*DESCRIPCION*/
+
+.descrip{
+    padding: 30px;
+    flex-direction: column;
+}
+
+h5 {
+    margin-bottom: 8px;
+    font-size: 19px;
+}
+
+h6 {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 25px;
+}
+
+/*VIDEO*/
+
+.box-video{
+    flex-direction: column;
+}
+
+.video {
+    margin-bottom: 40px;
+}
+
+/*LISTA*/
+
+.icons {
+    width: 100%;
+    align-items: start;
+}
+
+.icons li {
+    display: flex;
+    align-items: center;
+    font-family: ubuntu;
+    color: rgb(73, 73, 73);
+    transition: 1s all;
+}
+
+.icons li:hover {
+    color: palevioletred;
+    font-size: large;
+}
+
+.icons img {
+    height: 20px;
+    margin: 5px;
+}
+
+.section {
+    background: linear-gradient(to bottom right, #fffdfd, #c9c9c9);
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.section button {
+    width: 130px;
+    height: 130px;
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 10px;
+    color: white;
+    font-family: ubuntu;
+    font-size: 20px;
+    font-weight: 700;
+    transition: 1s all;
+}
+
+.section button:hover{
+    border: solid white 5px;
+}
+
+/*DESKTOP*/
+
+.desktop {
+    padding: 70px 30px 0px 30px;
+    flex-direction: column;
+}
+
+/*PLANNER*/
+
+.planner{
+    padding: 100px 30px 30px 30px;
+    background: url(/img/escritorio.png);
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+    flex-direction: column;
+}
+
+.planner button{
+    width: 100%;
+    border: none;
+    padding: 12px;
+    background-color:#F5A30D;
+    color: white;
+    margin: 6px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    box-shadow: 6px 5px 10px grey;
+    transition: 1s all;
+}
+
+.planner button:hover{
+    background-color: #5CE1E6;
+}
+
+
+
+/*BREACKPOINT*/
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  
+}
+
+@media screen and (min-width: 1025px) {
+    .box-video{
+        flex-direction: row;
+    }
+    .video {
+        width: 50%;
+    }
+    .icons{
+        width: 50%;
+    }
+    .desktop {
+        flex-direction: row;
+        padding: 70px 30px 70px 30px;
+    }
+    .desktop img{
+        width: 50%;
+    }
+    .desktop p{
+        width: 50%;
+    }
+    .planner button{
+        width: 38%;
+        margin: 25px;
+    }
+    .planner h6{
+        width: 60%;
+    }
+}
