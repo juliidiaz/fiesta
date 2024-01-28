@@ -7,6 +7,10 @@ body{
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
 .d-center{
     display: flex;
     justify-content: center;
@@ -59,6 +63,8 @@ li {
 h5 {
     margin-bottom: 8px;
     font-size: 19px;
+    width: 100%;
+    text-align: center;
 }
 
 h6 {
@@ -127,7 +133,7 @@ h6 {
 }
 
 .section button:hover{
-    border: solid white 5px;
+    color: rgb(87, 87, 87);
 }
 
 /*DESKTOP*/
