@@ -1,0 +1,29 @@
+.title-diseno {
+    width: 90%;
+}
+
+.disenos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.disenos a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.disenos a img {
+    width: 150px;
+}
+
+.disenos a p {
+    position: absolute;
+    font-family: grand hotel;
+    font-size: 35px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}

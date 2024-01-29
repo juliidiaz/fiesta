@@ -25,6 +25,10 @@ a{
     font-family: ubuntu;
 }
 
+.gh{
+    font-family: grand hotel;
+}
+
 li {
     list-style-type: none;
     padding: 0;
@@ -65,10 +69,12 @@ h5 {
     font-size: 19px;
     width: 100%;
     text-align: center;
+    font-family: special elite;
 }
 
 h6 {
     font-size: 16px;
+    font-family: ubuntu;
     font-weight: 700;
     letter-spacing: 2px;
     text-align: center;
@@ -88,15 +94,20 @@ h6 {
 /*LISTA*/
 
 .icons {
-    width: 100%;
     align-items: start;
+    color: rgb(73, 73, 73);
+    font-family: ubuntu;
+}
+
+.icons ul {
+    padding: 0px 0px 0px 15px;
 }
 
 .icons li {
+
     display: flex;
     align-items: center;
-    font-family: ubuntu;
-    color: rgb(73, 73, 73);
+    margin: 7px;
     transition: 1s all;
 }
 
