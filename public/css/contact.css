@@ -1,8 +1,31 @@
+.body-contacto{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.contactos{
+    flex-direction: column;
+    flex-grow: 1;
+
+}
+
+.contactos h5, .contactos h6, .contactos .box-cont {
+    width: 80%;
+}
+
+.box-cont{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 33px;
+}
+
 .box-cont img{
     width: 90px;
     margin: 30px;
 }
 
-.contactos {
-    min-height: 100vh;
+@media (min-width: 768px) and (orientation: landscape) {
+    .contactos h5, .contactos h6, .contactos .box-cont {
+        width: 70%;
+    }
 }

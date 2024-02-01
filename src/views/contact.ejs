@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
     <%- include('./partials/document.ejs') %>
-<body>
-    <%- include('./partials/navbar.ejs') %>
-
-    
-    <div class="contactos">
-        <h5>Contactos</h5>
-        <h6>Contactate con nosotros:</h6>    
-        <div class="box-cont d-center">
-            <img src="/img/face.png" alt="">
-            <img src="/img/ws.png" alt="">
-            <img src="/img/mail.png" alt="">
-            <img src="/img/in.png" alt="">
-        </div>
+    <body>
+        
+        <div class="body-contacto">
+        <%- include('./partials/navbar.ejs') %>        
+            <div class="contactos d-center">
+            <h5>Contactos</h5>
+            <h6>Las vías de comunicación estarán activas para cualquier consulta. <br>
+                El horario de atención será: de lunes a sábados de 13 a 20 hs. 
+            </h6>    
+            <div class="box-cont d-center">
+                <a href=""><img src="/img/face.png" alt=""></a>
+                <a href=""><img src="/img/ws.png" alt=""></a>
+                <a href=""><img src="/img/mail.png" alt=""></a>
+                <a href="http://www.instagram.com/fiesta.a.un.click"><img src="/img/in.png" alt=""></a>
+            </div>
+            </div>    
+        <%- include('./partials/footer.ejs') %>
     </div>
-
-    <%- include('./partials/footer.ejs') %>
 </body>
 </html>

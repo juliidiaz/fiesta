@@ -67,6 +67,8 @@
 
 footer{
     flex-direction: column;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2);
+
 }
 
 .box-footer{
@@ -97,7 +99,7 @@ footer{
 
 
 
-@media screen and (min-width: 1025px) {
+@media (min-width: 768px) and (orientation: landscape) {    
     .nav-phone{
         display: none;
     }
