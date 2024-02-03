@@ -14,12 +14,28 @@
 }
 
 .box-us img{
-    height: 250px;
-    margin-top: 19px;
+    width: 80%;
+    margin: 20px;
 }
 
 .box-us h6 {
     width: 80%;
+    margin: 0;
+}
+
+.box-us a img {
+    width: 140px;
+    margin: 40px;
+}
+
+
+@media (min-width: 768px) and (orientation: landscape) {    
+    .box-us img{
+        width: 40%;
+    }
+    .box-us h6 {
+        width: 60%;
+    }
 }
 
 
