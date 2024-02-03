@@ -15,13 +15,11 @@
 
 .box-us img{
     height: 250px;
+    margin-top: 19px;
 }
 
 .box-us h6 {
-        float: center; /* Alinea el texto a la derecha de la imagen */
-        shape-outside: url('/public/img/mockupcel.png'); /* Establece la forma del contorno de acuerdo a la imagen */
-        width: 85%; /* Ancho del área del texto */
-        padding: 20px; /* Espaciado interno del área del texto */
-        box-sizing: border-box; /* Incluye el padding en el ancho total */
+    width: 80%;
 }
+
 
