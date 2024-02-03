@@ -8,6 +8,7 @@ router.get("/bautismo", mainController.bautismo);
 router.get('/cumples', mainController.cumples);
 router.get('/faq', mainController.faq);
 router.get('/contacto', mainController.contact);
+router.get('/about-us', mainController.us);
 
 
 

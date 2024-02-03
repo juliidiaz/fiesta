@@ -16,6 +16,9 @@ const mainController = {
     },
     contact: (req, res) => {
         res.render("contact")
+    },
+    us: (req, res) => {
+        res.render("about-us")
     }
 }
 
