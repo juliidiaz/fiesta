@@ -23,7 +23,58 @@
     background-position: center;
     scale: -1;
     transform: scaleX(-1);
-    mask-image: linear-gradient(to bottom, transparent 80%, black 100%);
+    mask-image: linear-gradient(to bottom, transparent 70%, black 100%);
+    overflow: hidden;
 }
 
+/*countdown*/
+.countdown-gral{
+    position: relative;
+    bottom: 550px;
+}
 
+.countdown-card {
+  display: flex;
+  justify-content: space-around;
+  width: 85%;
+}
+
+.count-circle {
+    height: 75px;
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: solid gray 2px;
+}
+
+.countdown-circle {
+    height: 66px;
+    width: 66px;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+}
+
+.countdown-group {
+    flex-direction: column;
+}
+
+.countdown-group p{
+    margin: 0;
+    font-family: ubuntu;
+    font-weight: bold;
+    font-size: 16px;
+    color: gray;
+}
+
+.countdown-number {
+    font-family: ubuntu;
+  font-size: 23px;
+  font-weight: bold;
+  color: white;
+}
