@@ -1,10 +1,10 @@
-/*FESTIVO*/
-.box-img-festivo {
+/*clasico*/
+.box-img-clasico {
     position: relative;
     flex-direction: column;
 }
 
-.festivo-header {
+.clasico-header {
     height: 600px;
     width: 100%;
     background-position: center;
@@ -18,11 +18,11 @@
     font-size: 47px;
 }
 
-.festivo-header p{
+.clasico-header p{
     font-family: grand hotel;
 }
 
-.festivo-reflejo{
+.clasico-reflejo{
     height: 600px;
     width: 100%;
     background-position: center;
@@ -91,7 +91,7 @@
 
 /*FEASE*/
 
-.festivo-frase{
+.clasico-frase{
     flex-direction: column;
     background-image: url("/img/disenos/comillas.png");
     background-size: cover;
@@ -102,31 +102,31 @@
 
 }
 
-.festivo-frase p {
+.clasico-frase p {
     font-family: grand hotel;
     text-align: center;
     font-size: xx-large;
     width: 80%;
 }
 
-.festivo-frase i {
+.clasico-frase i {
     width: 70%;
     text-align:end;
 }
 
 /*SALON*/
 
-.festivo-salon {
+.clasico-salon {
     height: 500px;
     flex-direction: column;
 }
 
-.festivo-salon img{
+.clasico-salon img{
     width: 150px;
     margin: 20px;
 }
 
-.festivo-salon p{
+.clasico-salon p{
     font-family: ubuntu;
     font-size: 20px;
     color: rgb(68, 68, 68);
@@ -136,32 +136,88 @@
 
 /*FOTOS*/
 
-.festivo-fotos {
+.clasico-fotos {
     background-color: #d8d8d8;
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Dos columnas de tamaño igual */
     gap: 10px; /* Ajusta el espacio entre las fotos */
+    padding: 10px;
 }
 
-.festivo-fotos img {
+.clasico-fotos img {
     width: 100%; /* O ajusta según sea necesario */
 }
 
+/*BUZON*/
 .box-buzon {
     flex-direction: column;
     padding: 20px;
     width: 85%;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1); /* Desplazamiento X, Desplazamiento Y, Desenfoque, Color */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+    margin: 30px;
+    /* Desplazamiento X, Desplazamiento Y, Desenfoque, Color */
 
 }
 .box-buzon img {
     background-color: rgb(77, 77, 77);
     border-radius: 50%;
     width: 80px;
-
+    
 }
 
 .box-buzon p{
     font-family: ubuntu;
     font-size: 20px;
     color: rgb(68, 68, 68);}
+    
+/*hashtag*/
+
+.clasico-hashtag{
+    background-image: url(/img/disenos/hashtagfondo.png);
+    background-size: cover;
+    height: 500px;
+    margin: 50px 0px 50px 0px;
+    flex-direction: column;
+}
+
+.clasico-hashtag p{
+    margin: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hash-text {
+    font-size: 58px;
+    color: white;
+    font-family: Grand hotel;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 6); 
+    /* Desplazamiento X, Desplazamiento Y, Desenfoque, Color */
+}
+
+/*wsp*/
+
+.clasico-wsp {
+    flex-direction: column;
+    padding: 20px;
+    width: 85%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+    margin: 30px;
+    /* Desplazamiento X, Desplazamiento Y, Desenfoque, Color */
+
+}
+.clasico-wsp img {
+    background-color: rgb(77, 77, 77);
+    border-radius: 50%;
+    width: 80px;
+    
+}
+
+.clasico-wsp p{
+    font-family: ubuntu;
+    font-size: 20px;
+    color: rgb(68, 68, 68);
+    text-align: center;
+}
