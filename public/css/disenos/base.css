@@ -16,6 +16,7 @@
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-size: 47px;
+
 }
 
 .clasico-header p{
@@ -41,11 +42,13 @@
 
 /*countdown*/
 
-.countdown-card {
-  display: flex;
-  justify-content: space-around;
-  width: 85%;
-  margin: 40px 0px 40px 0px;
+.countdown-gral{
+    margin: 60px 0px 60px 0px;
+}
+
+.countdown-group {
+    flex-direction: column;
+    margin: 5px;
 }
 
 .count-circle {
@@ -69,9 +72,6 @@
   background-color: white;
 }
 
-.countdown-group {
-    flex-direction: column;
-}
 
 .countdown-group p{
     margin: 0;
@@ -82,7 +82,7 @@
 }
 
 .countdown-number {
-    font-family: ubuntu;
+font-family: ubuntu;
   font-size: 23px;
   font-weight: bold;
   color: rgb(68, 68, 68);
@@ -94,12 +94,11 @@
 .clasico-frase{
     flex-direction: column;
     background-image: url("/img/disenos/comillas.png");
-    background-size: cover;
+    background-size:contain;
+    background-repeat:no-repeat;
     height: 300px;
     background-position: center;
-    color: rgb(68, 68, 68);
-    margin-top: 40px;
-
+    color: rgb(75, 75, 75);
 }
 
 .clasico-frase p {
@@ -117,8 +116,8 @@
 /*SALON*/
 
 .clasico-salon {
-    height: 500px;
     flex-direction: column;
+    padding: 40px;
 }
 
 .clasico-salon img{
@@ -130,8 +129,28 @@
     font-family: ubuntu;
     font-size: 20px;
     color: rgb(68, 68, 68);
-    width: 80%;
     text-align: center;
+}
+
+.clasico-gps {
+    width: 80%;
+    text-align: end;
+    font-size: 19px;
+    font-family: ubuntu;
+    color: #4B4B4B;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+.clasico-gps img{
+    padding: 5px;
+    background-color: #d8d8d8;
+    border: solid 3px white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Desplazamiento X, Desplazamiento Y, Desenfoque, Color */
+    border-radius: 50%;
+    width: 63px;
 }
 
 /*FOTOS*/
@@ -142,6 +161,7 @@
     grid-template-columns: repeat(2, 1fr); /* Dos columnas de tamaño igual */
     gap: 10px; /* Ajusta el espacio entre las fotos */
     padding: 10px;
+
 }
 
 .clasico-fotos img {
@@ -149,12 +169,17 @@
 }
 
 /*BUZON*/
+
+.clasico-buzon {
+    padding: 40px;
+}
 .box-buzon {
     flex-direction: column;
-    padding: 20px;
-    width: 85%;
+    padding: 30px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
-    margin: 30px;
+    text-align: center;
+    width: 100%;
+    background: linear-gradient(to right top, #ffffff, #d8d8d8);
     /* Desplazamiento X, Desplazamiento Y, Desenfoque, Color */
 
 }
@@ -176,9 +201,8 @@
     background-image: url(/img/disenos/hashtagfondo.png);
     background-size: cover;
     height: 500px;
-    margin: 50px 0px 50px 0px;
     flex-direction: column;
-}
+    }
 
 .clasico-hashtag p{
     margin: 20px;
@@ -197,27 +221,14 @@
     /* Desplazamiento X, Desplazamiento Y, Desenfoque, Color */
 }
 
-/*wsp*/
-
-.clasico-wsp {
-    flex-direction: column;
-    padding: 20px;
-    width: 85%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
-    margin: 30px;
-    /* Desplazamiento X, Desplazamiento Y, Desenfoque, Color */
-
-}
-.clasico-wsp img {
-    background-color: rgb(77, 77, 77);
-    border-radius: 50%;
-    width: 80px;
-    
-}
-
-.clasico-wsp p{
-    font-family: ubuntu;
-    font-size: 20px;
-    color: rgb(68, 68, 68);
-    text-align: center;
+@media (min-width: 768px) and (orientation: landscape) {
+    .countdown-group {
+        margin: 30px;
+    }
+    .clasico-frase{
+        height: 430px;
+    }
+    .clasico-fotos {
+        grid-template-columns: repeat(3, 1fr);    
+    }
 }
